@@ -1,3 +1,4 @@
+/* celular */
 * {
   box-sizing: border-box;
 }
@@ -50,5 +51,52 @@ footer {
   header {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* compu */
+@media (min-width: 1025px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+    padding: 0.1em;
+    padding-right: 1.5em;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: flex-end;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0.5em;
+  }
+
+  .product {
+    width: 30.0%;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 10px;
+  }
+  li {
+     display: inline;
+     margin-left: 70px;
   }
 }
